@@ -5,11 +5,18 @@ const messageEL = document.querySelector(".message")
 const scoreEl = document.querySelector('.score')
 const background = document.querySelector('.background')
 const reset = document.querySelector('#reset')
+const span = document.querySelector('.highest-score')
 let secretNumber = Math.trunc(Math.random() * 20 + 1)
 console.log(secretNumber);
 let message = 'Start Guessing...'
 let score = 20
 let highScore = 0
+ if( parseInt(localStorage.getItem("highestScore"))>=0){
+    span.textContent = highScore
+ } 
+ span.textContent = highScore
+
+
 checkBtn.addEventListener("click", () => {
     if (!guessInput.value) return messageEL.textContent = 'Please add number '
     const userGuess = Number(guessInput.value)
@@ -26,7 +33,7 @@ checkBtn.addEventListener("click", () => {
         background.style.backgroundColor = "green"
         if (score  >  highScore) {
             highScore = score
-            const span = document.querySelector('.highest-score')
+            localStorage.setItem("highScore", highScore)
             span.textContent = highScore
         }
     }
