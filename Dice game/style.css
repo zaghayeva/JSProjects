@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+}
+.background{
+    height: 100vh;
+    width: 100vw;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    display: flex;
+    flex-direction: row ;
+}
+.player1Background{
+    height: 70vh;
+    width: 30vw;
+    background-color: rgb(96, 194, 96);
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.player2Background{
+    height: 70vh;
+    width: 30vw;
+    background-color: rgb(152, 198, 152);
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
