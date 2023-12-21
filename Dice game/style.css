@@ -7,24 +7,98 @@
     background-color: green;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .header{
     display: flex;
     flex-direction: row ;
+    position: relative;
+    height: fit-content;
+    justify-content: center;
 }
 .player1Background{
-    height: 70vh;
     width: 30vw;
+    padding:40px;
+    height: fit-content;
     background-color: rgb(96, 194, 96);
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
 }
 .player2Background{
-    height: 70vh;
+    height: fit-content;
     width: 30vw;
+    padding: 40px;
     background-color: rgb(152, 198, 152);
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
+.player1{
+    display: flex;
+    justify-content: center;
+}
+.redBackground1{
+    height: 100px;
+    width: 150px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+}
+.redBackground2{
+    height: 100px;
+    width: 150px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+}
+
+
+.number1{
+    color:brown;
+    display: flex;
+    justify-content: center;
+
+}
+.number2{
+    color: brown;
+    display: flex;
+    justify-content: center;
+}
+
+.player1Text{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+   
+}
+
+.player2Text{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+
+}
+
+.gameButton{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
